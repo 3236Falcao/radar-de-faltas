@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "recon": "node scripts/spike-recon.js",
-    "login": "node scripts/spike-login.js"
+    "login": "node scripts/spike-login.js",
+    "laudos": "node scripts/spike-laudos.js",
+    "diagnostico": "node scripts/diagnostico-laudos.js"
   },
   "engines": {
     "node": ">=18"
