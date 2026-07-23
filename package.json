@@ -1,0 +1,18 @@
+{
+  "name": "radar-de-faltas",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Protótipo do Radar de Faltas — spike de autenticação no Professor Online (Brusque/SC)",
+  "type": "module",
+  "scripts": {
+    "recon": "node scripts/spike-recon.js",
+    "login": "node scripts/spike-login.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "playwright": "^1.45.0"
+  }
+}

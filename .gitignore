@@ -1,0 +1,9 @@
+# Segredos — nunca versionar
+.env
+
+# Dependências
+node_modules/
+
+# Saídas de depuração do spike (screenshots, traces, HTML)
+artifacts/*
+!artifacts/.gitkeep
