@@ -4,9 +4,9 @@ import 'dotenv/config';
  * Configuração do spike, lida do .env.
  *
  * A validação é intencionalmente dividida:
- *  - `config` sempre carrega (a recon precisa só da URL de entrada);
+ *  - `config` sempre carrega (basta a URL de entrada);
  *  - `requireCredentials()` só é chamado pelo fluxo de login, falhando cedo
- *    e com mensagem clara caso usuário/senha não estejam preenchidos.
+ *    e com mensagem clara caso as credenciais não estejam preenchidas.
  */
 export const config = {
   entryUrl:

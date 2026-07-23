@@ -1,7 +1,7 @@
 /**
  * Fluxo de autenticação no Professor Online (Brusque/SC).
  *
- * Seletores confirmados pela recon (`npm run recon`):
+ * Campos do formulário de login:
  *   - #fmcpf    (text)     → CPF
  *   - #fmsenha  (password) → senha
  *   - #FUenviar (submit)   → botão "Acessar"
@@ -9,7 +9,7 @@
  *                            nativamente, sem montar o POST na mão)
  *
  * Recebe uma `page` já criada (não gerencia o browser) para ser reutilizável
- * na próxima fase (raspar as faltas) sem reescrever o login.
+ * em outras fases sem reescrever o login.
  *
  * @param {import('playwright').Page} page  página já em config.entryUrl
  * @param {{ cpf: string, password: string }} credentials
@@ -31,14 +31,9 @@ export async function login(page, credentials) {
 }
 
 /**
- * Critério de sucesso.
- *
- * Heurística provisória: se o campo de CPF (#fmcpf) sumiu, saímos da tela de
+ * Critério de sucesso: se o campo de CPF (#fmcpf) sumiu, saímos da tela de
  * login → autenticado. Se ele continua presente, o login foi recusado (o form
  * recarrega na mesma URL em caso de erro).
- *
- * A ser refinado quando conhecermos a tela pós-login (a captura em artifacts/
- * mostra o que aparece de fato).
  *
  * @param {import('playwright').Page} page
  * @returns {Promise<boolean>}

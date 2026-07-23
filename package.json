@@ -5,10 +5,8 @@
   "description": "Protótipo do Radar de Faltas — spike de autenticação no Professor Online (Brusque/SC)",
   "type": "module",
   "scripts": {
-    "recon": "node scripts/spike-recon.js",
     "login": "node scripts/spike-login.js",
-    "laudos": "node scripts/spike-laudos.js",
-    "diagnostico": "node scripts/diagnostico-laudos.js"
+    "laudos": "node scripts/spike-laudos.js"
   },
   "engines": {
     "node": ">=18"

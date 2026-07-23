@@ -1,8 +1,8 @@
 /**
- * Spike — Etapa 2: Login.
+ * Fase 1 — Login.
  *
- * Tenta autenticar de fato usando o fluxo de src/login.js e as credenciais
- * do .env. Só funciona depois que a recon revelar os seletores reais.
+ * Autentica no Professor Online usando o fluxo de src/login.js e as
+ * credenciais do .env, reportando sucesso/falha.
  *
  * Uso: npm run login
  */
